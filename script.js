@@ -1,0 +1,35 @@
+document.addEventListener('DOMContentLoaded', function () {
+    // Sticky NavBar
+    const header = document.querySelector('header');
+    if (header) {
+        window.addEventListener('scroll', function () {
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    }
+
+    // Filterable Cards
+    const lists = document.querySelectorAll('.list');
+    const cards = document.querySelectorAll('.card');
+
+    if (lists.length && cards.length) {
+        lists.forEach(function (li) {
+            li.addEventListener('click', function () {
+                // update active class on filter buttons
+                lists.forEach(function (l) { l.classList.remove('active'); });
+                this.classList.add('active');
+
+                const dataFilter = this.getAttribute('data-filter');
+
+                // show/hide cards based on data-item
+                cards.forEach(function (card) {
+                    const item = card.getAttribute('data-item');
+                    if (dataFilter === 'all' || item === dataFilter) {
+                        card.classList.remove('hide');
+                    } else {
+                        card.classList.add('hide');
+                    }
+                });
+            });
+        });
+    }
+});

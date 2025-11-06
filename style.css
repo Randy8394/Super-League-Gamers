@@ -215,7 +215,7 @@ header .action .searchBx input{
 
 /* Games */
 
-.games{
+.accounts{
     padding: 0px 100px;
     width: 100%;
     min-height: 100vh;
@@ -226,12 +226,12 @@ header .action .searchBx input{
     margin: 40px auto;
 }
 
-.games h2{
+.accounts h2{
     color: #cd7f32;
     margin: 10px 0;
 }
 
-.games ul{
+.accounts ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,7 +239,7 @@ header .action .searchBx input{
     margin-bottom: 20px;
 }
 
-.games ul li{
+.accounts ul li{
     list-style: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -249,13 +249,13 @@ header .action .searchBx input{
     color: #fff;
 }
 
-.games ul li.active{
+.accounts ul li.active{
     background: #ffd700;
     color: #000;
     box-shadow: 0 0 10px #ffd700;
 }
 
-.games .cardBx{
+.accounts .cardBx{
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -264,7 +264,7 @@ header .action .searchBx input{
     align-items: center;
 }
 
-.games .cardBx .card{
+.accounts .cardBx .card{
     width: 60 0px;
     border-radius: 10px;
     margin: 20px 40px;
@@ -272,20 +272,20 @@ header .action .searchBx input{
     overflow: hidden;
 }
 
-.games .cardBx .card img{
+.accounts .cardBx .card img{
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.games .cardBx .card .content h4{
+.accounts .cardBx .card .content h4{
     color: #000;
     margin: 15px 0;
     padding: 10px;
     font-weight: 800;
 }
 
-.games .cardBx .card .progress-line{
+.accounts .cardBx .card .progress-line{
     position: relative;
     height: 10px;
     width: 90%;
@@ -298,7 +298,7 @@ header .action .searchBx input{
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 
-.games .cardBx .card .progress-line span{
+.accounts .cardBx .card .progress-line span{
     position: absolute;
     height: 100%;
     width: 80%;
@@ -316,7 +316,7 @@ header .action .searchBx input{
     }
 }
 
-.games .cardBx .card .info{
+.accounts .cardBx .card .info{
     border-top: 2px solid #cd7f32;
     margin-left: 25px;
     margin-right: 25px;
@@ -325,31 +325,137 @@ header .action .searchBx input{
     align-items: center;
 }
 
-.games .cardBx .card .info p{
+.accounts .cardBx .card .info p{
     font-size: 1rem;
     color: #000;
 }
 
-.games .cardBx .card .info p span{
+.accounts .cardBx .card .info p span{
     color: #000;
 }
 
-.games .cardBx .card .info a{
+.accounts .cardBx .card .info a{
     display: inline-block;
     padding: 10px 20px;
     border: 1px solid #013200;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
-    color: #fff;
+    color: #013200;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-left: 60%;
 }
 
-.games .cardBx .card .info a:hover{
+.accounts .cardBx .card .info a:hover{
     background: #013200;
     border: none;
     color: #ffd700;
-    box-shadow: #013200;
+    box-shadow: 0 0 10px #013200;;
+}
+
+/* utility class used by JS to hide cards */
+.hide{ display: none !important; }
+
+.tournaments{
+    padding: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tournaments h2{
+    color: #cd7f32;
+    margin: 10px 0;
+}
+
+.tournaments .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tournaments .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #ffd700;
+    overflow: hidden;
+}
+.tournaments .boxBx .box img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.tournaments .boxBx .box .content{
+    padding: 10px;
+}
+
+.tournaments .boxBx .box .content h4{
+    color: #000;
+    margin-top: 15px;
+}
+
+.tournaments .boxBx .box .content h4 span{
+    color: #013200;
+}
+
+.tournaments .boxBx .box .content p{
+    text-align: justify;
+    color: #000;
+    margin-top: 10px;
+
+}
+
+.tournaments .boxBx .box .content .btn{
+display: flex;
+justify-content: space-between;
+}
+
+.tournaments .boxBx .box .content .watch{
+    display: inline-block;
+    border: 1px solid #013200;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #013200;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.tournaments .boxBx .box .content .watch:hover{
+    background: #013200;
+    color: #ffd700;
+    box-shadow: none;
+    box-shadow: 0 0 10px #013200;
+}
+
+.tournaments .boxBx .box .content .join{
+    display: inline-block;
+    border: 1px solid #013200;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #013200;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.tournaments .boxBx .box .content .join:hover{
+    background: #013200;
+    color: #ffd700;
+    box-shadow: none;
+    box-shadow: 0 0 10px #013200;
 }

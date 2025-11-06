@@ -7,6 +7,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Responsive NavBar
+
+    function toggleMenu() {
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const nav = document.querySelector('.nav');
+        toggleMenu.classList.toggle('active');
+        nav.classList.toggle('active');
+    }
+
     // Filterable Cards
     const lists = document.querySelectorAll('.list');
     const cards = document.querySelectorAll('.card');

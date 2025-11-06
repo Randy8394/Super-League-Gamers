@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Super League Gamers</title>
-        <link rel="icon" href="/images/slg-logo.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/slg-logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
@@ -14,11 +14,11 @@
         <header>
             <a href="#" class="logo">SLG</a>
             <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">Market</a></li>
-                <li><a href="#">Tournaments</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#market">Market</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="action">
@@ -27,12 +27,12 @@
                     <input type="text" placeholder="search">
                 </div>
             </div>
-            <div class="toggleMenu"></div>
+            <div class="toggleMenu" onclick="toggleMenu()"></div>
         </header>
 
 
     <!--Home Banner-->
-    <div class="banner">
+    <div class="banner" id="home">
         <div class="bg">
             <div class="content">
                 <h2>Welcome to the Dashboard of <br> Super League Gamers</h2>
@@ -44,7 +44,7 @@
     </div>
 
     <!--About-->
-    <div class="about">
+    <div class="about" id="about">
          <div class="contentBx">
             <h2>About Us</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore facilis optio dignissimos, molestiae quas quam ipsa reiciendis reprehenderit ducimus hic eius maiores vel eaque cumque atque quibusdam aspernatur nobis fuga!
@@ -59,7 +59,7 @@
 
     <!--Markets-->
 
-    <div class="accounts">
+    <div class="accounts" id="market">
         <h2>Accounts Sale</h2>
         <ul>
             <li class="list active" data-filter = "all">All</li>
@@ -121,7 +121,7 @@
 
 <!--Tournaments-->
 
-<div class="tournaments">
+<div class="tournaments" id="tournaments">
     <h2>Live Tournaments</h2>
     <div class="boxBx">
         
@@ -226,7 +226,7 @@
 
 <!--Contact Us-->
 
-<section class="contact">
+<section class="contact" id="contact">
         <div class="contact-container">
             <h1>Get In <span>Touch</span></h1>
             <h3>Let's Work Together!</h3>
@@ -281,3 +281,15 @@
             </div>
         </div>
     </section>
+
+<!--Footer-->
+
+<footer>
+    <div class="info">
+        <a href="#" class="logo">SLG</a>
+        <p> <i class="bx bx-copyright"></i> 2022 All Rights Reserved</p>
+        <img src="images/slg-logo.png" height="50px">
+    </div>
+</footer>
+
+</body>

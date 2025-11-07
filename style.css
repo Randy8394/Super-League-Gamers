@@ -694,11 +694,16 @@ footer .info p {
         right: 0px;
         bottom: 0px;
         background: #ffd700;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        z-index: 1000;
+        z-index: 1001;
+    }
+
+    /* show the nav when the nav element itself has the active class */
+    header .nav.active{
+        display: flex;
     }
 
     header .nav li{

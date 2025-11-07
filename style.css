@@ -681,29 +681,26 @@ footer .info p {
 
 /* Responsive Design */
 
-@media (max-width: 991px) {
+@media (max-width: 991px)
+{
     header{
         padding: 15px 40px;
     }
 
     header .nav{
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         background: #ffd700;
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         z-index: 1000;
     }
 
-    /* show the nav when the nav element itself has the active class */
-    header .nav.active{
-        display: flex;
-    }
     header .nav li{
         margin: 20px 0;
     }
@@ -711,23 +708,5 @@ footer .info p {
     header .nav li a{
         font-size: 24px;
         margin: 10px 0;
-    }
-
-    .toggleMenu{
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: url('images/menu.png');
-        background-position: center;
-        background-size: 30px;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        z-index: 1001;
-    }
-    .toggleMenu.active{
-        background: url('images/close.png');
-        background-position: center;
-        background-size: 30px;
-        background-repeat: no-repeat;
     }
 }

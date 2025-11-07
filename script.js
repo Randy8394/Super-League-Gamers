@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
         toggleMenu.classList.toggle('active');
         nav.classList.toggle('active');
     }
+    // expose toggleMenu so inline onclick (in index.html) can call it
+    window.toggleMenu = toggleMenu;
 
     // Filterable Cards
     const lists = document.querySelectorAll('.list');

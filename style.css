@@ -700,7 +700,8 @@ footer .info p {
         z-index: 1000;
     }
 
-    header .nav .active{
+    /* show the nav when the nav element itself has the active class */
+    header .nav.active{
         display: flex;
     }
     header .nav li{
@@ -717,7 +718,7 @@ footer .info p {
         width: 30px;
         height: 30px;
         background: url('images/menu.png');
-        position: center;
+        background-position: center;
         background-size: 30px;
         background-repeat: no-repeat;
         cursor: pointer;

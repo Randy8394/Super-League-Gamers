@@ -709,4 +709,24 @@ footer .info p {
         font-size: 24px;
         margin: 10px 0;
     }
+
+    .toggleMenu{
+        position : relative;
+        width: 30px;
+        height: 30px;
+        background: url(images/menu.png);
+        background-position: center;
+        background-size: 45px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    /* when the toggle element itself has .active, switch the background */
+    .toggleMenu.active{
+        background: url(images/close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
 }

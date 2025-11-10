@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.toggleMenu = toggleMenu;
 
 
-    /* Scrolling Animation Effect */
+    /* Scrolling Animations Effect */
 
     window.addEventListener('scroll', function() {
         var anime = document.querySelectorAll('.animeX');

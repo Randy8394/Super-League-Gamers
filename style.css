@@ -679,18 +679,6 @@ footer .info p {
     color: #cd7f32;
 }   
 
-.animeX {
-    position: relative;
-    opacity: 0;
-    transform: translateY(150px);
-    transition: all 2s ease;
-}
-
-.animeX.active{
-    transform: translateY(0px);
-    opacity: 1;
-}
-
 /* Responsive Design */
 
 @media (max-width: 991px)
@@ -746,23 +734,6 @@ footer .info p {
         background-size: 30px;
         background-repeat: no-repeat;
     }
-    /* make contact section stack and center on small screens */
-    .contact-content{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .contact-info, .contact-form{
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .info-box{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
     .banner .bg img{
         position: absolute;
@@ -791,16 +762,5 @@ footer .info p {
     .contact{
         flex-direction: column;
         align-items: center;
-    }
-
-    .contact .form h1{
-        text-align: center;
-    }
-
-    .footer .info {
-        flex-direction: column;
-        padding-right: 0;
-        padding-left: 0;
-        text-align: center;
     }
 }

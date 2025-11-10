@@ -18,6 +18,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // expose toggleMenu so inline onclick (in index.html) can call it
     window.toggleMenu = toggleMenu;
 
+
+    /* Scrolling Animation Effect */
+
+    window.addEventListener('scroll', function() {
+        var anime = document.querySelectorAll('.animeX');
+
+        for(var s=0; s<anime.length; s++){
+            var windowHeight = window.innerHeight;
+            var animeTop = anime[s].getBoundingClientRect().top;
+            var animepoint = 150;
+
+            if(animeTop < windowHeight - animepoint){
+                anime[s].classList.add('active');
+            } else {
+                anime[s].classList.remove('active');
+            }
+        }
+    });
+
     // Filterable Cards
     const lists = document.querySelectorAll('.list');
     const cards = document.querySelectorAll('.card');

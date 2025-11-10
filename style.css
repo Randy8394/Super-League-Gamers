@@ -679,6 +679,20 @@ footer .info p {
     color: #cd7f32;
 }   
 
+
+.animeX{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.animeX.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
 /* Responsive Design */
 
 @media (max-width: 991px)
@@ -752,6 +766,7 @@ footer .info p {
     .about{
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     .about .contentBx{
@@ -762,5 +777,123 @@ footer .info p {
     .contact{
         flex-direction: column;
         align-items: center;
+    }
+}
+
+/* Small screens: phones narrower than 400px */
+@media screen and (max-width: 400px) {
+    /* prevent horizontal scroll caused by wide elements */
+    html, body {
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+
+    header{
+        padding: 10px 14px;
+    }
+
+    header .logo{
+        font-size: 1.4rem;
+    }
+
+    /* Tweak toggle/menu sizing and keep it visible */
+    .toggleMenu{
+        width: 28px;
+        height: 28px;
+        background-size: 28px;
+        z-index: 10002;
+    }
+
+    header .nav{
+        top: 56px;
+        padding: 8px 16px;
+    }
+
+    header .nav li a{
+        font-size: 18px;
+        padding: 10px 6px;
+    }
+
+    .banner{
+        padding: 0 12px;
+        min-height: auto;
+    }
+
+    /* make banner image behave responsively on very small screens */
+    .banner .bg img{
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+        object-fit: cover;
+    }
+
+    .banner .bg .content{
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* General section padding reductions */
+    .about, .accounts, .tournaments, .contact, footer{
+        padding: 12px;
+    }
+
+    /* Cards and boxes become full width and stack */
+    .about .contentBx,
+    .accounts .cardBx .card,
+    .tournaments .boxBx .box{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .accounts .cardBx .card{
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+
+    .accounts .cardBx .card img,
+    .tournaments .boxBx .box img{
+        height: auto;
+        max-height: 220px;
+        width: 100%;
+    }
+
+    .accounts ul{
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    /* Contact area stacks and inputs grow to full width */
+    .contact-content{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .contact-form, .contact-info{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .input-box{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-box input, textarea{
+        font-size: 14px;
+    }
+
+    footer .info{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* make entrance animations subtler on small screens */
+    .animeX{
+        transform: translateY(40px);
+    }
+
+    .animeX.active{
+        transform: translateY(0);
     }
 }
